@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="happymmall,电商">
+		<meta name="description" content="happymmall电商平台开发教程">
+        <title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+	</head>
+
+	<body>
+		<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login"><a href="./user-login.html">登录</a></span>
+                <span class="link js-register"><a href="./user-register.html">注册</a></span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user-center.html">我的MMall</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于MMall</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a class="logo" href="./index.html">MMall</a>
+        <div class="search-con">
+            <input class="search-input" id="search-input" placeholder="请输入商品名称"/>
+            <button class="btn search-btn" id="search-btn">搜索</button>
+        </div>
+    </div>
+</div>
+
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">MMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+<div class="page-wrap w">
+    <div class="panel">
+        <h1 class="panel-title">收货地址</h1>
+        <div class="panel-body address-con">
+            <div class="address-item active">
+                <div class="address-title">
+                    北京 北京 (Rosen收)
+                </div>
+                <div class="address-detail">
+                    朝阳三里屯 17605092419
+                </div>
+                <div class="address-opera">
+                    <span class="link address-update">编辑</span>
+                    <span class="link address-delete">删除</span>
+                </div>
+            </div>
+            <div class="address-item ">
+                <div class="address-title">
+                    北京 北京 (Rosen收)
+                </div>
+                <div class="address-detail">
+                    朝阳三里屯 17605092419
+                </div>
+                <div class="address-opera">
+                    <span class="link address-update">编辑</span>
+                    <span class="link address-delete">删除</span>
+                </div>
+            </div>
+            <div class="address-item">
+                <div class="address-title">
+                    北京 北京 (Rosen收)
+                </div>
+                <div class="address-detail">
+                    朝阳三里屯 17605092419
+                </div>
+                <div class="address-opera">
+                    <span class="link address-update">编辑</span>
+                    <span class="link address-delete">删除</span>
+                </div>
+            </div>
+            <div class="address-add">
+                <div class="address-new">
+                    <i class="fa fa-plus">
+                        <div class="text">使用新地址</div>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <h1 class="panel-title">商品清单</h1>
+        <div class="panel-body product-con">
+            <table class="product-table">
+                <tr>
+                    <th class="cell-img">&nbsp;</th>
+                    <th class="cell-info">商品描述</th>
+                    <th class="cell-price">价格</th>
+                    <th class="cell-count">数量</th>
+                    <th class="cell-total">小计</th>
+                </tr>
+                <tr>
+                    <td class="cell-img">
+                        <a href="./detail.html?productId=xxx" target="_blank">
+                            <img class="p-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515298989204&di=c20f2d8dfcc38e6f024e335e66f5475b&imgtype=0&src=http%3A%2F%2Fwww.kidel.net%2FeBusiness%2Fproduct_images%2Fb%2Fcn_b_4_273.jpg" alt="xxx">
+                        </a>
+                    </td>
+                    <td class="cell-info">
+                        <a href="./detail.html?productId=xxx" target="_blank">
+                            ThinkPad 旗舰本
+                        </a>
+                    </td>
+                    <td class="cell-price">￥123</td>
+                    <td class="cell-count">123</td>
+                    <td class="cell-total">￥123</td>
+                </tr>
+                <tr>
+                    <td class="cell-img">
+                        <a href="./detail.html?productId=xxx" target="_blank">
+                            <img class="p-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515298989204&di=c20f2d8dfcc38e6f024e335e66f5475b&imgtype=0&src=http%3A%2F%2Fwww.kidel.net%2FeBusiness%2Fproduct_images%2Fb%2Fcn_b_4_273.jpg" alt="xxx">
+                        </a>
+                    </td>
+                    <td cell-info>
+                        <a href="./detail.html?productId=xxx" target="_blank">
+                            ThinkPad 旗舰本
+                        </a>
+                    </td>
+                    <td class="cell-price">￥123</td>
+                    <td class="cell-count">123</td>
+                    <td class="cell-total">￥123</td>
+                </tr>
+            </table>
+            <div class="submit-con">
+                <span>订单总价:</span>
+                <span class="submit-total">￥123</span>
+                <span class="order-submit btn">提交订单</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-wrap">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1 class="modal-title">使用新地址</h1>
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <div class="form-line">
+                        <label for="receiver-name" class="label"><span class="required">*</span>收件人姓名：</label>
+                        <input  class="form-item" id="receiver-name" placeholder="请输入收件人姓名">
+                    </div>
+                    <div class="form-line">
+                        <label for="receiver-province" class="label"><span class="required">*</span>所在城市：</label>
+                        <select class="form-item" id="receiver-province">
+                            <option>北京</option>
+                        </select>
+                        <select class="form-item" id="receiver-city">
+                            <option>北京</option>
+                        </select>
+                    </div>
+                    <div class="form-line">
+                        <label for="receiver-address" class="label"><span class="required">*</span>详细地址：</label>
+                        <input  class="form-item" id="receiver-address" placeholder="请精确到门牌号">
+                    </div>
+                    <div class="form-line">
+                        <label for="receiver-phone" class="label"><span class="required">*</span>收件人手机：</label>
+                        <input  class="form-item" id="receiver-phone" placeholder="请输入收件人手机号">
+                    </div>
+                    <div class="form-line">
+                        <label for="receiver-zip" class="label">邮政编码：</label>
+                        <input  class="form-item" id="receiver-zip" placeholder="如100000">
+                    </div>
+                    <div class="form-line">
+                        <a class="btn addrrss-btn">保存收货地址</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a> |           
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2017 happymmall.com All Right Reserved
+        </p>
+    </div>
+</div>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	</body>
+</html>
